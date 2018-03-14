@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="style.css" rel="stylesheet">
+    
+    
+<title>Greeting Card Generator</title>
+
+</head>
+
+<body>
+    <div class="greetingcard">
+        <h1 class="title">Happy Birthday!</h1>
+        <h3>Dear <span class="to"></span>,</h3>
+        <p class="content">You're <span class="age"></span> years old now and you are starting to understand your role in society and the importance of making wise decisions. We all support you and you can always count on us. Happy <span class="age"></span>th birthday!</p>
+        <h3>Sincerely,</h3>
+        <h3><span class="name"></span></h3>
+    </div>
+    <button class="apply">Apply Changes</button>
+    <form>
+        <p>From: </p><input type="text" class="inpname">
+        <br>
+        <p>To: </p><input type="text" class="inpto">
+        <br>
+        <p>Title: </p><input type="text" class="inptitle">
+        <br>
+        <p>Card Content: </p><textarea class="inpcontent">
+        </textarea>
+        <br>
+        <p>Background Style: </p><select class="bgstyle">
+            <option value="Color">Color</option>
+            <option value="Image">Image</option>
+        </select>
+        <br>
+        <div class="bgimage"><p>Background Image URL: </p><input type="text" class="inpbgimg">
+        <br></div>
+        <p>Background Color</p><select class="inpbgcolor">
+            <option value="white">White</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+            <option value="Custom">Custom HEX Code</option>
+        </select>
+        <br>
+        <div class="hidden bghex"><p>Custom HEX: </p><input type="text" class="inpcustomhex">
+        <br></div>
+        
+        <p>Border: </p><select class="borderselect">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <div class="hidden borderstuff">
+        <br>
+        <p>Border Style: </p><select class="borderstyle">
+            <option value="Solid">Solid</option>
+            <option value="Dotted">Dotted</option>
+            <option value="Dashed">Dashed</option>
+            <option value="Double">Double</option>
+            <option value="Groove">Groove</option>
+            <option value="Ridge">Ridge</option>
+            <option value="Inset">Inset</option>
+            <option value="Outset">Outset</option>
+        </select>
+        <br>
+        <p>Border Color</p><select class="bordercolor">
+            <option value="white">White</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+            <option value="Custom">Custom HEX Code</option>
+        </select>
+        <br>
+        <div class="hidden bdhex"><p>Custom HEX: </p><input type="text" class="inpbdhex">
+        <br></div>
+        <p>Border Radius: </p><input type="text" class="borderradius">
+        </div>
+        <br>
+        <p>Font Color: </p><input type="text" class="inpfonthex">
+        <br>
+        <p>Text Align: </p><select class="textalign">
+            <option value="center">Center</option>
+            <option value="left">Left</option>
+            <option value="right">Right</option>
+        </select>
+        <hr>
+        
+    </form>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
